@@ -10,9 +10,9 @@ King::King(ColorType team, QGraphicsItem* parent) : ChessPiece(team, parent) {
 
 void King::setImage() {
     if (side == ColorType::Light)
-        setPixmap(QPixmap(":/images/KingLight.png"));
+        setPixmap(QPixmap(":/images/Chessmen/KingLight.png"));
     else
-        setPixmap(QPixmap(":/images/KingDark.png"));
+        setPixmap(QPixmap(":/images/Chessmen/KingDark.png"));
 }
 
 void King::moves() {

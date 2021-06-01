@@ -9,9 +9,9 @@ Knight::Knight(ColorType team, QGraphicsItem* parent) : ChessPiece(team, parent)
 
 void Knight::setImage() {
     if (side == ColorType::Light)
-        setPixmap(QPixmap(":/images/KnightLight.png"));
+        setPixmap(QPixmap(":/images/Chessmen/KnightLight.png"));
     else
-        setPixmap(QPixmap(":/images/KnightDark.png"));
+        setPixmap(QPixmap(":/images/Chessmen/KnightDark.png"));
 }
 
 // There are total 8 places where a knight can move.

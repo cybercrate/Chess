@@ -9,9 +9,9 @@ Bishop::Bishop(ColorType team, QGraphicsItem* parent) : ChessPiece(team, parent)
 
 void Bishop::setImage() {
     if (side == ColorType::Light)
-        setPixmap(QPixmap(":/images/BishopLight.png"));
+        setPixmap(QPixmap(":/images/Chessmen/BishopLight.png"));
     else
-        setPixmap(QPixmap(":/images/BishopDark.png"));
+        setPixmap(QPixmap(":/images/Chessmen/BishopDark.png"));
 }
 
 void Bishop::moves() {

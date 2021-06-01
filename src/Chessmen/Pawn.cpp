@@ -10,9 +10,9 @@ Pawn::Pawn(ColorType team, QGraphicsItem* parent) : ChessPiece(team, parent) {
 
 void Pawn::setImage() {
     if (side == ColorType::Light)
-        setPixmap(QPixmap(":/images/PawnLight.png"));
+        setPixmap(QPixmap(":/images/Chessmen/PawnLight.png"));
     else
-        setPixmap(QPixmap(":/images/PawnDark.png"));
+        setPixmap(QPixmap(":/images/Chessmen/PawnDark.png"));
 }
 
 void Pawn::moves() {

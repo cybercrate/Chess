@@ -9,9 +9,9 @@ Rook::Rook(ColorType team, QGraphicsItem* parent) : ChessPiece(team, parent) {
 
 void Rook::setImage() {
     if (side == ColorType::Light)
-        setPixmap(QPixmap(":/images/RookLight.png"));
+        setPixmap(QPixmap(":/images/Chessmen/RookLight.png"));
     else
-        setPixmap(QPixmap(":/images/RookDark.png"));
+        setPixmap(QPixmap(":/images/Chessmen/RookDark.png"));
 }
 
 void Rook::moves() {

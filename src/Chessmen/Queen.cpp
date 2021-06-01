@@ -9,9 +9,9 @@ Queen::Queen(ColorType team, QGraphicsItem* parent) : ChessPiece(team, parent) {
 
 void Queen::setImage() {
     if (side == ColorType::Light)
-        setPixmap(QPixmap(":/images/QueenLight.png"));
+        setPixmap(QPixmap(":/images/Chessmen/QueenLight.png"));
     else
-        setPixmap(QPixmap(":/images/QueenDark.png"));
+        setPixmap(QPixmap(":/images/Chessmen/QueenDark.png"));
 }
 
 void Queen::moves() {

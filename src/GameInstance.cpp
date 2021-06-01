@@ -5,10 +5,10 @@
 GameInstance::GameInstance(QWidget* parent) : QGraphicsView(parent) {
     // Making the scene.
     gameScene_ = new QGraphicsScene();
-    gameScene_->setSceneRect(0.0, 0.0, 400.0, 434.0);
+    gameScene_->setSceneRect(0.0, 0.0, 499.0, 532.0);
 
     // Making the view.
-    setFixedSize(400, 436);
+    setFixedSize(499, 530);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setScene(gameScene_);
@@ -40,7 +40,7 @@ GameInstance::GameInstance(QWidget* parent) : QGraphicsView(parent) {
 
 void GameInstance::drawChessBoard() {
     board_ = new ChessBoard();
-    ChessBoard::drawBoxes(width() / 2 - 200, 34);
+    ChessBoard::drawBoxes(width() / 2 - 248, 33);
 }
 
 void GameInstance::placeInDeadPlace(ChessPiece* piece) {
@@ -105,7 +105,7 @@ void GameInstance::displayMainMenu() {
     auto playButton = new Button("Play");
     playButton->setScale(1.2);
     double xPos = double(width()) / 2 - 5 - playButton->boundingRect().width() / 2;
-    double yPos = 200.0;
+    double yPos = 246.0;
     playButton->setPos(xPos, yPos);
     connect(playButton, SIGNAL(clicked()), this, SLOT(start()));
     addToScene(playButton);

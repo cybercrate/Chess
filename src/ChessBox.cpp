@@ -6,7 +6,7 @@ extern GameInstance* game;
 
 ChessBox::ChessBox(QGraphicsItem* parent) : QGraphicsRectItem(parent) {
     // Making the square board_ box.
-    setRect(0.0, 0.0, 50.0, 50.0);
+    setRect(0.0, 0.0, 62.0, 62.0);
     brush_.setStyle(Qt::SolidPattern);
     setZValue(-1);
     setChessPieceColor(ColorType::None);
@@ -78,8 +78,8 @@ void ChessBox::setColor(const QColor& color) {
 }
 
 void ChessBox::placePiece(ChessPiece* piece) {
-    piece->setPos(x() + 25 - double(piece->pixmap().width()) / 2,
-                  y() + 25 - double(piece->pixmap().width()) / 2);
+    piece->setPos(x() + 31 - double(piece->pixmap().width()) / 2,
+                  y() + 31 - double(piece->pixmap().width()) / 2);
     piece->setCurrentBox(this);
     setHasChessPiece(true, piece);
     currentPiece = piece;
